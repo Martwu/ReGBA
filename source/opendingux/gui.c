@@ -1,7 +1,7 @@
 /* ReGBA - In-application menu
  *
  * Copyright (C) 2013 Dingoonity user Nebuleon
- * 
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public Licens e as
  * published by the Free Software Foundation; either version 2 of
@@ -371,7 +371,7 @@ static void DefaultDisplayBackgroundFunction(struct Menu* ActiveMenu)
 	if (SDL_MUSTLOCK(OutputSurface))
 		SDL_UnlockSurface(OutputSurface);
 	//SDL_FillRect(OutputSurface, NULL, COLOR_BACKGROUND);
-	
+
 	char bgpicpath[MAX_PATH + 1];
 	sprintf(bgpicpath, "%s/bg.png", executable_path);
 	SDL_Surface* JustLoaded = loadPNG(bgpicpath, SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -384,7 +384,7 @@ static void DefaultDisplayBackgroundFunction(struct Menu* ActiveMenu)
 		SDL_FreeSurface(JustLoaded);
 		JustLoaded = NULL;
 	}
-	
+
 	if (SDL_MUSTLOCK(OutputSurface))
 		SDL_LockSurface(OutputSurface);
 }
@@ -451,597 +451,597 @@ static struct MenuEntry CheatsMenu_SelectedState = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[0].cheat_name, &game_config.cheats_flag[0].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState1 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[1].cheat_name, &game_config.cheats_flag[1].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState2 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[2].cheat_name, &game_config.cheats_flag[2].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState3 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[3].cheat_name, &game_config.cheats_flag[3].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState4 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[4].cheat_name, &game_config.cheats_flag[4].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState5 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[5].cheat_name, &game_config.cheats_flag[5].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState6 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[6].cheat_name, &game_config.cheats_flag[6].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState7 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[7].cheat_name, &game_config.cheats_flag[7].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState8 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[8].cheat_name, &game_config.cheats_flag[8].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState9 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[9].cheat_name, &game_config.cheats_flag[9].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState10 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[10].cheat_name, &game_config.cheats_flag[10].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState11 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[11].cheat_name, &game_config.cheats_flag[11].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState12 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[12].cheat_name, &game_config.cheats_flag[12].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState13 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[13].cheat_name, &game_config.cheats_flag[13].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState14 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[14].cheat_name, &game_config.cheats_flag[14].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState15 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[15].cheat_name, &game_config.cheats_flag[15].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState16 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[16].cheat_name, &game_config.cheats_flag[16].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState17 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[17].cheat_name, &game_config.cheats_flag[17].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState18 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[18].cheat_name, &game_config.cheats_flag[18].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState19 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[19].cheat_name, &game_config.cheats_flag[19].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState20 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[20].cheat_name, &game_config.cheats_flag[20].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState21 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[21].cheat_name, &game_config.cheats_flag[21].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState22 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[22].cheat_name, &game_config.cheats_flag[22].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-}; 
+};
 
 static struct MenuEntry CheatsMenu_SelectedState23 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[23].cheat_name, &game_config.cheats_flag[23].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};  
+};
 
 static struct MenuEntry CheatsMenu_SelectedState24 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[24].cheat_name, &game_config.cheats_flag[24].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};  
+};
 
 static struct MenuEntry CheatsMenu_SelectedState25 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[25].cheat_name, &game_config.cheats_flag[25].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};  
+};
 
 static struct MenuEntry CheatsMenu_SelectedState26 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[26].cheat_name, &game_config.cheats_flag[26].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};  
+};
 
 static struct MenuEntry CheatsMenu_SelectedState27 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[27].cheat_name, &game_config.cheats_flag[27].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState28 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState28 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[28].cheat_name, &game_config.cheats_flag[28].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState29 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState29 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[29].cheat_name, &game_config.cheats_flag[29].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState30 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState30 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[30].cheat_name, &game_config.cheats_flag[30].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState31 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState31 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[31].cheat_name, &game_config.cheats_flag[31].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState32 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState32 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[32].cheat_name, &game_config.cheats_flag[32].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState33 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState33 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[33].cheat_name, &game_config.cheats_flag[33].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState34 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState34 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[34].cheat_name, &game_config.cheats_flag[34].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState35 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState35 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[35].cheat_name, &game_config.cheats_flag[35].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState36 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState36 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[36].cheat_name, &game_config.cheats_flag[36].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState37 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState37 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[37].cheat_name, &game_config.cheats_flag[37].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState38 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState38 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[38].cheat_name, &game_config.cheats_flag[38].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState39 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState39 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[39].cheat_name, &game_config.cheats_flag[39].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState40 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState40 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[40].cheat_name, &game_config.cheats_flag[40].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState41 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState41 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[41].cheat_name, &game_config.cheats_flag[41].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState42 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState42 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[42].cheat_name, &game_config.cheats_flag[42].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState43 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState43 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[43].cheat_name, &game_config.cheats_flag[43].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState44 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState44 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[44].cheat_name, &game_config.cheats_flag[44].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState45 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState45 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[45].cheat_name, &game_config.cheats_flag[45].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState46 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState46 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[46].cheat_name, &game_config.cheats_flag[46].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState47 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState47 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[47].cheat_name, &game_config.cheats_flag[47].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState48 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState48 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[48].cheat_name, &game_config.cheats_flag[48].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState49 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState49 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[49].cheat_name, &game_config.cheats_flag[49].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState50 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState50 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[50].cheat_name, &game_config.cheats_flag[50].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState51 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState51 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[51].cheat_name, &game_config.cheats_flag[51].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState52 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState52 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[52].cheat_name, &game_config.cheats_flag[52].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState53 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState53 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[53].cheat_name, &game_config.cheats_flag[53].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState54 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState54 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[54].cheat_name, &game_config.cheats_flag[54].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState55 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState55 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[55].cheat_name, &game_config.cheats_flag[55].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState56 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState56 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[56].cheat_name, &game_config.cheats_flag[56].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState57 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState57 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[57].cheat_name, &game_config.cheats_flag[57].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState58 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState58 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[58].cheat_name, &game_config.cheats_flag[58].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState59 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState59 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[59].cheat_name, &game_config.cheats_flag[59].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState60 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState60 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[60].cheat_name, &game_config.cheats_flag[60].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState61 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState61 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[61].cheat_name, &game_config.cheats_flag[61].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState62 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState62 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[62].cheat_name, &game_config.cheats_flag[62].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState63 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState63 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[63].cheat_name, &game_config.cheats_flag[63].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState64 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState64 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[64].cheat_name, &game_config.cheats_flag[64].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState65 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState65 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[65].cheat_name, &game_config.cheats_flag[65].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState66 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState66 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[66].cheat_name, &game_config.cheats_flag[66].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState67 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState67 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[67].cheat_name, &game_config.cheats_flag[67].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState68 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState68 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[68].cheat_name, &game_config.cheats_flag[68].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState69 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState69 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[69].cheat_name, &game_config.cheats_flag[69].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState70 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState70 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[70].cheat_name, &game_config.cheats_flag[70].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState71 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState71 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[71].cheat_name, &game_config.cheats_flag[71].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState72 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState72 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[72].cheat_name, &game_config.cheats_flag[72].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState73 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState73 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[73].cheat_name, &game_config.cheats_flag[73].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState74 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState74 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[74].cheat_name, &game_config.cheats_flag[74].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState75 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState75 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[75].cheat_name, &game_config.cheats_flag[75].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState76 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState76 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[76].cheat_name, &game_config.cheats_flag[76].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState77 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState77 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[77].cheat_name, &game_config.cheats_flag[77].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState78 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState78 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[78].cheat_name, &game_config.cheats_flag[78].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState79 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState79 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[79].cheat_name, &game_config.cheats_flag[79].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState80 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState80 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[80].cheat_name, &game_config.cheats_flag[80].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState81 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState81 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[81].cheat_name, &game_config.cheats_flag[81].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState82 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState82 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[82].cheat_name, &game_config.cheats_flag[82].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState83 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState83 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[83].cheat_name, &game_config.cheats_flag[83].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState84 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState84 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[84].cheat_name, &game_config.cheats_flag[84].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState85 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState85 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[85].cheat_name, &game_config.cheats_flag[85].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState86 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState86 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[86].cheat_name, &game_config.cheats_flag[86].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState87 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState87 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[87].cheat_name, &game_config.cheats_flag[87].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState88 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState88 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[88].cheat_name, &game_config.cheats_flag[88].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState89 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState89 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[89].cheat_name, &game_config.cheats_flag[89].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState90 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState90 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[90].cheat_name, &game_config.cheats_flag[90].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState91 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState91 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[91].cheat_name, &game_config.cheats_flag[91].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState92 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState92 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[92].cheat_name, &game_config.cheats_flag[92].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState93 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState93 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[93].cheat_name, &game_config.cheats_flag[93].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState94 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState94 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[94].cheat_name, &game_config.cheats_flag[94].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState95 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState95 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[95].cheat_name, &game_config.cheats_flag[95].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState96 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState96 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[96].cheat_name, &game_config.cheats_flag[96].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState97 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState97 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[97].cheat_name, &game_config.cheats_flag[97].cheat_active),
-			.ChoiceCount = 2,                                                                              
+			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
-};                                                                                                         
-                                                                                                           
-static struct MenuEntry CheatsMenu_SelectedState98 = {                                                     
+};
+
+static struct MenuEntry CheatsMenu_SelectedState98 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[98].cheat_name, &game_config.cheats_flag[98].cheat_active),
-			.ChoiceCount = 2,                                                                                
-			.Choices = {{ "关", "off" }, { "开", "on" }},  
-};                                                                                                           
-                                                                                                             
-static struct MenuEntry CheatsMenu_SelectedState99 = {                                                       
+			.ChoiceCount = 2,
+			.Choices = {{ "关", "off" }, { "开", "on" }},
+};
+
+static struct MenuEntry CheatsMenu_SelectedState99 = {
 			ENTRY_OPTION("cheat status", &game_config.cheats_flag[99].cheat_name, &game_config.cheats_flag[99].cheat_active),
 			.ChoiceCount = 2,
 			.Choices = {{ "关", "off" }, { "开", "on" }},
@@ -1198,12 +1198,12 @@ static void CheatListDownFunc(struct Menu** ActiveMenu){
 	}else{
 		DefaultDownFunction(&(*ActiveMenu), &(*ActiveMenu)->ActiveEntryIndex);
 	}
-	
-	
+
+
  }
- 
+
 static void CheatListUpFunc(struct Menu** ActiveMenu){
-	
+
 	if((*ActiveMenu)->ActiveEntryIndex == 0&& (*ActiveMenu)->Entries[0] ==&CheatsMenu_SelectedState13){
 		(*ActiveMenu)->Title = "金手指列表 第1页";
 		(*ActiveMenu)->Entries[0] = &CheatsMenu_SelectedState;
@@ -1326,7 +1326,7 @@ static void CheatListUpFunc(struct Menu** ActiveMenu){
  static void CheatListMenuInit(struct Menu** ActiveMenu)
 {
 	(*ActiveMenu)->Title = "金手指列表 第1页";
-	if((*ActiveMenu)->Entries[0] != &CheatsMenu_SelectedState 
+	if((*ActiveMenu)->Entries[0] != &CheatsMenu_SelectedState
 	&& (*ActiveMenu)->Entries[0] != &CheatsMenu_SelectedState13
 	&& (*ActiveMenu)->Entries[0] != &CheatsMenu_SelectedState26
 	&& (*ActiveMenu)->Entries[0] != &CheatsMenu_SelectedState39
@@ -1439,9 +1439,9 @@ static void CheatListUpFunc(struct Menu** ActiveMenu){
 		int i;
 		int looptimes = 100 - g_num_cheats;
 		for(i=0;i < looptimes; i++){
-			
+
 			(*ActiveMenu)->Entries[g_num_cheats + i] = &Strut;
-			
+
 		};
 		*/
 		int index;
@@ -1457,7 +1457,7 @@ static void CheatListUpFunc(struct Menu** ActiveMenu){
 }
 
 static void CheatListPageUpFunc(struct Menu** ActiveMenu){
-	
+
 	int i;
 	for(i=0;i<13;i++){
 		CheatListUpFunc(ActiveMenu);
@@ -1465,7 +1465,7 @@ static void CheatListPageUpFunc(struct Menu** ActiveMenu){
 	/*if((*ActiveMenu)->Entries[0] !=&CheatsMenu_SelectedState){
 		(*ActiveMenu)->ActiveEntryIndex = 0;
 	}*/
-	
+
 }
 
 
@@ -2200,7 +2200,7 @@ static void ActionSavedStateWrite(struct Menu** ActiveMenu, uint32_t* ActiveMenu
 		if (!GrabYesOrNo(*ActiveMenu, Temp))
 			return;
 	}
-	
+
 	// 2. If the file didn't exist or the user wanted to overwrite it, save.
 	uint32_t ret = save_state(SelectedState, MainMenu.UserData /* preserved screenshot */);
 	if (ret != 1)
@@ -2231,7 +2231,7 @@ static void ActionSavedStateDelete(struct Menu** ActiveMenu, uint32_t* ActiveMen
 	sprintf(Temp, "你想删除保存的状态 #%" PRIu32 "吗?\n[A] = 是  其他键 = 否", SelectedState + 1);
 	if (!GrabYesOrNo(*ActiveMenu, Temp))
 		return;
-	
+
 	// 2. If the user wants to, delete the saved state.
 	if (remove(SavedStateFilename) != 0)
 	{
@@ -2287,7 +2287,7 @@ static struct Menu NativeCodeMenu = {
 };
 
 static struct MenuEntry DebugMenu_NativeCode = {
-	ENTRY_SUBMENU("Native code statistics...", &NativeCodeMenu)
+	ENTRY_SUBMENU("Native code statistics", &NativeCodeMenu)
 };
 
 // -- Debug > Metadata stats --
@@ -2326,7 +2326,7 @@ static struct Menu MetadataMenu = {
 };
 
 static struct MenuEntry DebugMenu_Metadata = {
-	ENTRY_SUBMENU("Metadata clear statistics...", &MetadataMenu)
+	ENTRY_SUBMENU("Metadata clear statistics", &MetadataMenu)
 };
 
 // -- Debug > Execution stats --
@@ -2371,7 +2371,7 @@ static struct Menu ExecutionMenu = {
 };
 
 static struct MenuEntry DebugMenu_Execution = {
-	ENTRY_SUBMENU("Execution statistics...", &ExecutionMenu)
+	ENTRY_SUBMENU("Execution statistics", &ExecutionMenu)
 };
 
 // -- Debug > Code reuse stats --
@@ -2399,7 +2399,7 @@ static struct Menu ReuseMenu = {
 };
 
 static struct MenuEntry DebugMenu_Reuse = {
-	ENTRY_SUBMENU("Code reuse statistics...", &ReuseMenu)
+	ENTRY_SUBMENU("Code reuse statistics", &ReuseMenu)
 };
 #endif
 
@@ -2421,11 +2421,11 @@ static struct Menu ROMInfoMenu = {
 };
 
 static struct MenuEntry DebugMenu_ROMInfo = {
-	ENTRY_SUBMENU("ROM information...", &ROMInfoMenu)
+	ENTRY_SUBMENU("ROM information", &ROMInfoMenu)
 };
 
 static struct MenuEntry DebugMenu_VersionInfo = {
-	.Kind = KIND_CUSTOM, .Name = "ReGBA version information...",
+	.Kind = KIND_CUSTOM, .Name = "ReGBA version information",
 	.ButtonEnterFunction = &ActionShowVersion
 };
 
@@ -2785,43 +2785,43 @@ static struct Menu SavedStateMenu = {
 // -- Main Menu --
 
 static struct MenuEntry PerGameMainMenu_Display = {
-	ENTRY_SUBMENU("显示设置...", &PerGameDisplayMenu)
+	ENTRY_SUBMENU("显示设置", &PerGameDisplayMenu)
 };
 static struct MenuEntry MainMenu_Display = {
-	ENTRY_SUBMENU("显示设置...", &DisplayMenu)
+	ENTRY_SUBMENU("显示设置", &DisplayMenu)
 };
 
 static struct MenuEntry PerGameMainMenu_Audio = {
-	ENTRY_SUBMENU("音频设置...", &PerGameAudioMenu)
+	ENTRY_SUBMENU("音频设置", &PerGameAudioMenu)
 };
 static struct MenuEntry MainMenu_Audio = {
-	ENTRY_SUBMENU("音频设置...", &AudioMenu)
+	ENTRY_SUBMENU("音频设置", &AudioMenu)
 };
 
 static struct MenuEntry PerGameMainMenu_Input = {
-	ENTRY_SUBMENU("输入设置...", &PerGameInputMenu)
+	ENTRY_SUBMENU("输入设置", &PerGameInputMenu)
 };
 static struct MenuEntry MainMenu_Input = {
-	ENTRY_SUBMENU("输入设置...", &InputMenu)
+	ENTRY_SUBMENU("输入设置", &InputMenu)
 };
 
 static struct MenuEntry PerGameMainMenu_Hotkey = {
-	ENTRY_SUBMENU("热键...", &PerGameHotkeyMenu)
+	ENTRY_SUBMENU("热键", &PerGameHotkeyMenu)
 };
 static struct MenuEntry MainMenu_Hotkey = {
-	ENTRY_SUBMENU("热键...", &HotkeyMenu)
+	ENTRY_SUBMENU("热键", &HotkeyMenu)
 };
 //Cheats button
 static struct MenuEntry MainMenu_Cheats = {
-	ENTRY_SUBMENU("金手指...", &CheatsMenu)
+	ENTRY_SUBMENU("金手指", &CheatsMenu)
 };
 
 static struct MenuEntry MainMenu_SavedStates = {
-	ENTRY_SUBMENU("保存的状态...", &SavedStateMenu)
+	ENTRY_SUBMENU("保存的状态", &SavedStateMenu)
 };
 
 static struct MenuEntry MainMenu_Debug = {
-	ENTRY_SUBMENU("性能与调试...", &DebugMenu)
+	ENTRY_SUBMENU("性能与调试", &DebugMenu)
 };
 
 static struct MenuEntry MainMenu_Reset = {
@@ -2920,14 +2920,14 @@ u32 ReGBA_Menu(enum ReGBA_MenuEntryReason EntryReason)
 		(*DisplayDataFunction)(ActiveMenu, ActiveMenu->Entries[ActiveMenu->ActiveEntryIndex]);
 
 		ReGBA_VideoFlip();
-		
+
 		// Wait. (This is for platforms on which flips don't wait for vertical
 		// sync.)
 		usleep(5000);
 
 		// Get input.
 		enum GUI_Action Action = GetGUIAction();
-		
+
 		switch (Action)
 		{
 			case GUI_ACTION_ENTER:
@@ -2948,7 +2948,7 @@ u32 ReGBA_Menu(enum ReGBA_MenuEntryReason EntryReason)
 				(*ButtonLeaveFunction)(&ActiveMenu, &ActiveMenu->ActiveEntryIndex);
 				break;
 			}
-			
+
 			case GUI_ACTION_PAGEUP:
 			{
 				MenuModifyFunction ButtonPageUpFunction = ActiveMenu->ButtonPageUpFunction;
@@ -2956,7 +2956,7 @@ u32 ReGBA_Menu(enum ReGBA_MenuEntryReason EntryReason)
 				(*ButtonPageUpFunction)(&ActiveMenu, &ActiveMenu->ActiveEntryIndex);
 				break;
 			}
-			
+
 			case GUI_ACTION_PAGEDOWN:
 			{
 				MenuModifyFunction ButtonPageDownFunction = ActiveMenu->ButtonPageDownFunction;
@@ -2964,8 +2964,8 @@ u32 ReGBA_Menu(enum ReGBA_MenuEntryReason EntryReason)
 				(*ButtonPageDownFunction)(&ActiveMenu, &ActiveMenu->ActiveEntryIndex);
 				break;
 			}
-			
-			
+
+
 			case GUI_ACTION_UP:
 			{
 				MenuModifyFunction ButtonUpFunction = ActiveMenu->ButtonUpFunction;

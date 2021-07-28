@@ -47,7 +47,7 @@ CFLAGS      := $(SDL_CFLAGS) -mno-abicalls -Wall -Wno-unused-variable \
                -fomit-frame-pointer $(DEFS) $(INCLUDE) $(OPTIMIZE)
 ASFLAGS     := $(CFLAGS) -D__ASSEMBLY__
 ##LDFLAGS     := $(SDL_LIBS) -lpthread -lz -lm -lpng -lshake -s
-LDFLAGS     := $(SDL_LIBS) -lpthread -lz -lm -lpng  -s -w
+LDFLAGS     := $(SDL_LIBS) -lpthread -lz -lm -lpng14  -s -w
 
 DATA_TO_CLEAN := .opk_data $(TARGET).opk
 

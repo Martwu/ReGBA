@@ -1,3 +1,4 @@
+*.o
 .opk_data
 regba.opk
 regba
